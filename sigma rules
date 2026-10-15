@@ -1,0 +1,88 @@
+# Sigma Detection Rules
+
+![Sigma](https://img.shields.io/badge/Detection-Sigma-blue?style=flat-square)
+![YAML](https://img.shields.io/badge/Format-YAML-red?style=flat-square)
+![Cybersecurity](https://img.shields.io/badge/Focus-Detection%20Engineering-green?style=flat-square)
+
+## About This Project
+
+This repository contains Sigma detection rules I created to explore how suspicious activity can be identified through security logs. The rules focus on SSH brute-force activity, suspicious Microsoft Office processes, and potential credential access through LSASS.
+
+I'm using this project to build my detection engineering skills, practice writing YAML-based detection logic, and understand how detections map to real-world attack techniques.
+
+## Detection Rules
+
+### 1. SSH Brute-Force Detection
+
+**File:** `rules/ssh_bruteforce.yml`
+
+Detects failed SSH authentication attempts that may indicate password guessing or a brute-force attack.
+
+- **Log source:** Linux SSH authentication logs
+- **MITRE ATT&CK:** [T1110 — Brute Force](https://attack.mitre.org/techniques/T1110/)
+- **What to investigate:** Source IP, targeted accounts, failed login frequency, and any subsequent successful logins.
+
+### 2. Suspicious Office Macro Activity
+
+**File:** `rules/office_macro_execution.yml`
+
+Detects Microsoft Office applications launching command-line tools or script interpreters, which may indicate suspicious macro activity.
+
+- **Log source:** Windows process creation events
+- **MITRE ATT&CK:** [T1059 — Command and Scripting Interpreter](https://attack.mitre.org/techniques/T1059/)
+- **What to investigate:** Parent process, command line, user account, and related process activity.
+
+### 3. LSASS Process Access
+
+**File:** `rules/lsass_access.yml`
+
+Detects processes accessing LSASS, a Windows process that handles authentication. Unusual access may indicate an attempt to obtain credentials from memory.
+
+- **Log source:** Windows Sysmon process access events
+- **MITRE ATT&CK:** [T1003.001 — LSASS Memory](https://attack.mitre.org/techniques/T1003/001/)
+- **What to investigate:** Source process, user, host, access details, and whether the activity is expected.
+
+## Screenshots
+
+Screenshots will show the detection rules and their configuration in my development environment.
+
+Add your screenshots to the `screenshots` folder and use the following Markdown to display them:
+
+### SSH Brute-Force Detection
+![SSH Brute-Force Detection Rule](screenshots/ssh-bruteforce.png)
+
+### Office Macro Detection
+![Office Macro Detection Rule](screenshots/office-macro.png)
+
+### LSASS Access Detection
+![LSASS Access Detection Rule](screenshots/lsass-access.png)
+
+## Tools & Skills
+
+- Sigma
+- YAML
+- Detection Engineering
+- MITRE ATT&CK
+- Windows and Linux Security Logs
+- Threat Detection
+- False-Positive Analysis
+
+## Testing and Validation
+
+Sigma rules can be converted into queries for supported SIEM platforms using [Sigma CLI](https://github.com/SigmaHQ/sigma-cli).
+
+Each rule should be tested against the appropriate logs and adjusted to match the available event fields. Detection results should be reviewed to identify false positives and improve accuracy.
+
+## What I'm Learning
+
+Through this project, I'm developing a better understanding of how detection rules are structured, how suspicious activity can be identified, and how security detections can support threat investigation and SOC operations.
+
+## Resources
+
+- [Sigma Documentation](https://sigmahq.io/docs/)
+- [SigmaHQ Rule Repository](https://github.com/SigmaHQ/sigma)
+- [MITRE ATT&CK](https://attack.mitre.org/)
+
+## Disclaimer
+
+This is an independent cybersecurity portfolio project. The rules are intended for educational purposes and should be validated before being used in a production environment.
