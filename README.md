@@ -81,4 +81,4 @@ Through this project, I'm developing a better understanding of how detection rul
 
 ## Disclaimer
 
-This is an independent cybersecurity portfolio project. The rules are intended for educational purposes and should be validated before being used in a production environment.
+This is only an independent cybersecurity portfolio project. The rules are intended for educational purposes and should be Validated before being used in a production environment. 
