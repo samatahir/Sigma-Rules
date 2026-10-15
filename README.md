@@ -67,7 +67,9 @@ The screenshots below help illustrate how each Sigma rule is structured and what
 
 Sigma rules can be converted into queries for supported SIEM platforms using [Sigma CLI](https://github.com/SigmaHQ/sigma-cli).
 
-Each rule should be tested against the appropriate logs and adjusted to match the available event fields. Detection results should be reviewed to identify false positives and improve accuracy.
+Sigma CLI can be used to convert these rules into queries for supported SIEM tools.
+
+Each rule should be tested with the right log data to make sure it works as expected. Reviewing the results also helps catch false positives and improve the rules.
 
 ## What I'm Learning
 
