@@ -42,7 +42,7 @@ Detects processes accessing LSASS, a Windows process that handles authentication
 
 ## Screenshots
 
-The screenshots below help illustrate how each Sigma rule is structured and what the detection looks like in a SIEM or local testing environment. 
+The screenshots below help illustrate how each Sigma rule is structured and what the detection looks like in a SIEM.
 
 ### SSH Brute-Force Detection
 ![SSH Brute-Force Detection Rule](screenshots/ssh-bruteforce.png)
