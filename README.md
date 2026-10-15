@@ -65,7 +65,7 @@ The screenshots below help illustrate how each Sigma rule is structured and what
 
 ## Testing and Validation
 
-You can use Sigma CLI [Sigma CLI](https://github.com/SigmaHQ/sigma-cli) to convert Sigma rules into queries for supported SIEM tools. Each rule should be tested with the right logs and adjusted as needed. Reviewing the results helps spot false positives and improve the rules.
+I used [Sigma CLI](https://github.com/SigmaHQ/sigma-cli)  to convert my Sigma rules into queries for security monitoring tools. I also considered how the rules could be tested against relevant logs and adjusted to reduce false positives.
 
 ## What I'm Learning
 
