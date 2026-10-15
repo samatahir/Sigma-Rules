@@ -6,7 +6,7 @@
 
 ## About This Project
 
-This repository contains Sigma detection rules I created to explore how suspicious activity can be identified through security logs. The rules focus on SSH brute-force activity, suspicious Microsoft Office macro behavior, and LSASS access attempts. I use this project to build my detection engineering skills, practice writing YAML-based detection logic, and understand how detections map to real-world attack techniques.
+I created these Sigma rules to detect common attack techniques, including SSH brute-force attempts, suspicious Microsoft Office macro activity, and potential credential access through LSASS. This project focuses on writing detection logic in YAML and mapping rules to the MITRE ATT&CK framework.
 
 ## Detection Rules
 
