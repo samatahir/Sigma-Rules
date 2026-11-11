@@ -77,6 +77,3 @@ Through this project, I'm developing a better understanding of how detection rul
 - [SigmaHQ Rule Repository](https://github.com/SigmaHQ/sigma)
 - [MITRE ATT&CK](https://attack.mitre.org/)
 
-## Disclaimer
-
-This is only an independent cybersecurity portfolio project. The rules are intended for educational purposes and should be Validated before being used in a production environment. 
