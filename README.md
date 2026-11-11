@@ -42,7 +42,7 @@ Detects processes accessing LSASS, a Windows process that handles authentication
 
 ## Screenshots
 
-The screenshots below help illustrate how each Sigma rule is structured and what the detection looks like in a SIEM.
+The screenshots below help illustrate how each Sigma rule and detection looks like in a SIEM.
 
 ### SSH Brute-Force Detection
 ![SSH Brute-Force Detection Rule](screenshots/ssh-bruteforce.png)
@@ -63,13 +63,9 @@ The screenshots below help illustrate how each Sigma rule is structured and what
 - Threat Detection
 - False-Positive Analysis
 
-## Testing and Validation
-
-I used [Sigma CLI](https://github.com/SigmaHQ/sigma-cli)  to convert my Sigma rules into queries for security monitoring tools. I also considered how the rules could be tested against relevant logs and adjusted to reduce false positives.
-
 ## What I'm Learning
 
-Through this project, I'm developing a better understanding of how detection rules are structured, how suspicious activity can be identified, and how security detections can support threat investigation and response workflows.
+Through this project, you understand how detection rules are structured, how suspicious activity can be identified, and how security detections can support threat investigation and response workflows.
 
 ## Resources
 
