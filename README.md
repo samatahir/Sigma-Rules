@@ -6,7 +6,7 @@
 
 ## About This Project
 
-I created these Sigma rules to detect common attack techniques, including SSH brute-force attempts, suspicious Microsoft Office macro activity, and potential credential access through LSASS. This project focuses on writing detection logic in YAML and mapping rules to the MITRE ATT&CK framework.
+these Sigma rules to detect common attack techniques, including SSH brute-force attempts, suspicious Microsoft Office macro activity, and potential credential access through LSASS. This project focuses on writing detection logic in YAML and mapping rules to the MITRE ATT&CK framework.
 
 ## Detection Rules
 
